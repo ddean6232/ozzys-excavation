@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -21,10 +23,13 @@ export default function Hero() {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <div className="animate-fade-in-up mb-8">
-          <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-5 py-2 rounded-full text-sm font-medium">
+          <Link
+            to="/coverage"
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-white/20 hover:border-rust-light/50 transition-all"
+          >
             <span className="w-2 h-2 bg-ember rounded-full animate-pulse" />
             Serving Alberta
-          </span>
+          </Link>
         </div>
 
         {/* Main headline */}

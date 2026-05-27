@@ -189,6 +189,17 @@ export const contactContent = ${stringify(data.contact)} as const
 export const footerContent = ${stringify(data.footer)} as const
 
 export const pageContent_ = ${stringify(data.pageContent)} as const
+
+export interface JobLocation {
+  name: string
+  lat: number
+  lng: number
+  status: 'completed' | 'underway'
+  year: number
+  service: string
+}
+
+export const jobLocations: JobLocation[] = ${stringify(data.jobLocations)}
 `
 
 writeFileSync(resolve(root, 'src/data/content.ts'), out)

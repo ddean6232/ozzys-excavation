@@ -1035,5 +1035,182 @@ export const pageContent_ = {
     title: "Blog",
     subtitle: "Tips, Insights & Project Stories from the Field",
     hero: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920&q=80"
+  },
+  coverage: {
+    title: "Our Alberta Coverage",
+    subtitle: "Completed Projects & Active Job Sites Across the Province",
+    hero: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=80"
   }
 } as const
+
+export interface JobLocation {
+  name: string
+  lat: number
+  lng: number
+  status: 'completed' | 'underway'
+  year: number
+  service: string
+}
+
+export const jobLocations: JobLocation[] = [
+  {
+    name: "Springbank Acreage — Septic Install",
+    lat: 51.0734,
+    lng: -114.3847,
+    status: "completed",
+    year: 2024,
+    service: "Septic Systems"
+  },
+  {
+    name: "Bearspaw Estate — Land Clearing",
+    lat: 51.17,
+    lng: -114.3,
+    status: "completed",
+    year: 2024,
+    service: "Land Clearing & Mulching"
+  },
+  {
+    name: "Cochrane Rural — Earthworks",
+    lat: 51.189,
+    lng: -114.467,
+    status: "completed",
+    year: 2023,
+    service: "Excavation & Earthworks"
+  },
+  {
+    name: "Priddis Greens — Screw Piles",
+    lat: 50.8833,
+    lng: -114.3167,
+    status: "completed",
+    year: 2024,
+    service: "Screw Pile Installation"
+  },
+  {
+    name: "Okotoks Acreage — Septic System",
+    lat: 50.7255,
+    lng: -113.975,
+    status: "completed",
+    year: 2024,
+    service: "Septic Systems"
+  },
+  {
+    name: "Red Deer County — Dewatering",
+    lat: 52.2681,
+    lng: -113.8112,
+    status: "completed",
+    year: 2023,
+    service: "Dewatering & Water Transfer"
+  },
+  {
+    name: "Sylvan Lake — Septic Install",
+    lat: 52.3116,
+    lng: -114.085,
+    status: "completed",
+    year: 2024,
+    service: "Septic Systems"
+  },
+  {
+    name: "Lacombe Rural — Land Clearing",
+    lat: 52.4683,
+    lng: -113.733,
+    status: "completed",
+    year: 2023,
+    service: "Land Clearing & Mulching"
+  },
+  {
+    name: "Leduc County — Earthworks",
+    lat: 53.258,
+    lng: -113.549,
+    status: "completed",
+    year: 2024,
+    service: "Excavation & Earthworks"
+  },
+  {
+    name: "St. Albert — Screw Pile Install",
+    lat: 53.6334,
+    lng: -113.6288,
+    status: "completed",
+    year: 2024,
+    service: "Screw Pile Installation"
+  },
+  {
+    name: "Fort Saskatchewan — Septic",
+    lat: 53.712,
+    lng: -113.218,
+    status: "completed",
+    year: 2023,
+    service: "Septic Systems"
+  },
+  {
+    name: "Sherwood Park — Demolition",
+    lat: 53.5412,
+    lng: -113.296,
+    status: "completed",
+    year: 2024,
+    service: "Demolition"
+  },
+  {
+    name: "Grande Prairie Rural — Septic",
+    lat: 55.17,
+    lng: -118.8,
+    status: "completed",
+    year: 2023,
+    service: "Septic Systems"
+  },
+  {
+    name: "Lethbridge — Land Clearing",
+    lat: 49.6935,
+    lng: -112.8418,
+    status: "completed",
+    year: 2024,
+    service: "Land Clearing & Mulching"
+  },
+  {
+    name: "Medicine Hat — Excavation",
+    lat: 50.0405,
+    lng: -110.679,
+    status: "completed",
+    year: 2023,
+    service: "Excavation & Earthworks"
+  },
+  {
+    name: "Bragg Creek — Septic Repair",
+    lat: 50.95,
+    lng: -114.5667,
+    status: "underway",
+    year: 2025,
+    service: "Septic Systems"
+  },
+  {
+    name: "Airdrie Rural — Earthworks",
+    lat: 51.2917,
+    lng: -114.0144,
+    status: "underway",
+    year: 2025,
+    service: "Excavation & Earthworks"
+  },
+  {
+    name: "Camrose County — Land Clearing",
+    lat: 53.0167,
+    lng: -112.8167,
+    status: "underway",
+    year: 2025,
+    service: "Land Clearing & Mulching"
+  },
+  {
+    name: "Spruce Grove — Screw Piles",
+    lat: 53.545,
+    lng: -113.9008,
+    status: "underway",
+    year: 2025,
+    service: "Screw Pile Installation"
+  },
+  {
+    name: "Wetaskiwin — Septic New Build",
+    lat: 52.9695,
+    lng: -113.377,
+    status: "underway",
+    year: 2025,
+    service: "Septic Systems"
+  }
+]
