@@ -187,6 +187,8 @@ export const whyChooseUs_ = ${stringify(data.whyChooseUs)} as const
 export const contactContent = ${stringify(data.contact)} as const
 
 export const footerContent = ${stringify(data.footer)} as const
+
+export const pageContent_ = ${stringify(data.pageContent)} as const
 `
 
 writeFileSync(resolve(root, 'src/data/content.ts'), out)

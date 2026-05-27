@@ -1,0 +1,720 @@
+---
+# ═══════════════════════════════════════════════
+# Ozzy's Excavation — Site Content
+# Edit this file to update all website content.
+# Images: drop files in /public/ and reference as /filename.jpg
+# ═══════════════════════════════════════════════
+
+site:
+  name: Ozzy's Excavation
+  tagline: Earthworks & Septic
+  description: Expert Excavation & Site Solutions, Certified Septic Installer.
+  domain: ozzysexcavation.ca
+  email: admin@ozzysexcavation.ca
+  phone: Call for a quote
+  location: Alberta, Canada
+  legalName: Ozzy's Energy Services Ltd.
+
+nav:
+  logoLetter: O
+  ctaText: Get a Quote
+  links:
+    - label: Home
+      href: /
+    - label: Services
+      href: /#services
+    - label: About
+      href: /#about
+    - label: Contact
+      href: /#contact
+
+hero:
+  backgroundImage: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80
+  badgeText: Serving Alberta
+  headlineLine1: Ozzy's Excavation
+  headlineLine2: Earthworks & Septic
+  subtitle: Expert Excavation & Site Solutions, Certified Septic Installer. Your land. Your vision. Our expertise — built for Alberta conditions.
+  primaryCta: Get Your Free Quote
+  secondaryCta: Our Services
+  trustBadges:
+    - label: AOWMA Certified
+    - label: Fully Insured
+    - label: 10+ Years Experience
+    - label: Alberta Based
+
+about:
+  sectionLabel: About Oz
+  headline: A Lifetime of Passion for Heavy Equipment
+  highlightPhrase: Heavy Equipment
+  image: /ozzy.jpg
+  imageAlt: Ozzy — Owner of Ozzy's Excavation & Earthworks
+  bio:
+    - I grew up obsessed with machines, and that childhood passion shaped a career across major heavy-civil and inner-city construction projects. After nearly a decade in the industry, I built Ozzy's Excavation & Earthworks to turn acreages, backyards, and rural properties into functional, beautiful spaces.
+    - At Ozzy's Energy Services Ltd., we provide end-to-end private septic system solutions for acreages, rural homes, and new builds across Alberta. As AOWMA-certified professionals, we are qualified to assess, design, install, repair, and upgrade septic systems of any size or complexity.
+    - Whether you're building a new home, replacing a failed system, expanding your property, or correcting drainage issues — we take care of everything from initial soil evaluation and permitting to final inspection and commissioning.
+  stats:
+    - value: 10+
+      label: Years Experience
+    - value: 500+
+      label: Projects Done
+    - value: 100%
+      label: Client Satisfaction
+  tagline: Your land. Your vision. Our expertise.
+
+servicesHome:
+  sectionLabel: Our Services
+  headline: Septic, Earthwork & Excavation
+  headlineSeparator: "&"
+  subtitle: Everything from initial site assessment to final grade — we're your single source for land development in Alberta.
+  categories:
+    - slug: septic-systems
+      title: Septic Systems
+      subtitle: AOWMA-Certified
+      description: End-to-end private septic system solutions for acreages, rural homes, and new builds across Alberta — from soil evaluation to final commissioning.
+      image: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=800&q=80
+      items:
+        - AOWMA-Certified System Design
+        - Septic System Installation
+        - System Repair & Emergency Services
+        - Septic System Maintenance
+        - Site Assessments & Soil Testing (PSDS)
+        - Real Estate & Compliance Inspections
+        - Advanced Treatment Solutions
+        - Homeowner Septic Education
+    - slug: land-clearing
+      title: Land Clearing & Mulching
+      subtitle: Forestry Services
+      description: Professional forestry mulching and land clearing services that leave your site clean, accessible, and ready for the next phase.
+      image: https://images.unsplash.com/photo-1598902108854-10e335adac99?w=800&q=80
+      items:
+        - Forestry Mulching (Brush & Tree Clearing)
+        - Overgrowth Control & Site Reclamation
+        - Fire Guard & Line Clearing
+        - Pipeline & Lease Clearing
+        - Right-of-Way Clearing
+    - slug: excavation-earthworks
+      title: Excavation & Earthworks
+      subtitle: Site Development
+      description: From basement digs to acreage site prep — we handle every cubic yard with precision, the right equipment, and an eye on the finish grade.
+      image: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=800&q=80
+      items:
+        - Basement Excavation (New & Existing)
+        - Foundation Excavation & Backfill
+        - Trenching & Utility Excavation
+        - Garage Pads, Shop Pads & Building Pads
+        - Acreage Site Prep & Lot Development
+        - Road Building, Ditching, Culvert Install
+        - Rough Grade & Final Grade
+        - Driveway Building & Repair
+    - slug: dewatering
+      title: Dewatering & Water Transfer
+      subtitle: Pump Solutions
+      description: High-volume dewatering and water transfer services for construction sites, mines, and emergency flood response.
+      image: https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80
+      items:
+        - Construction & Mine Dewatering
+        - High Volume Water Transfer
+        - Pump Rentals & Custom Packages
+        - Emergency Flood Response & Site Drainage
+    - slug: screw-piles
+      title: Screw Pile Installation
+      subtitle: Precision Augering
+      description: Precise auguring and screw-pile installation for fences, decks, signage, and foundation footings — completed with accuracy and efficiency.
+      image: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=800&q=80
+      items:
+        - Fence & Deck Post Hole Auguring
+        - Screw Pile Holes with Depth-Specific Options
+        - Weight-Rated & Engineered Designs
+        - Signage Installations
+        - Foundation Footing Augering
+    - slug: additional-services
+      title: Additional Services
+      subtitle: More Ways We Help
+      description: Beyond earthworks — demolition, snow removal, landscaping, and seasonal services to keep your property in top shape year-round.
+      image: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80
+      items:
+        - Residential & Commercial Demolition
+        - Concrete & Asphalt Removal
+        - Snow Removal & Hauling
+        - Topsoil Spreading & Final Grading
+        - Sod Prep & Install
+        - Retaining Wall Design & Install
+        - Pressure Washing Services
+
+serviceDetails:
+  - slug: septic-systems
+    title: Septic Systems
+    subtitle: AOWMA-Certified Installation & Maintenance
+    hero: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=1200&q=80
+    heroAlt: Excavator digging for septic system installation
+    description: >-
+      End-to-end private septic system solutions for acreages, rural homes, and new builds
+      across Alberta — from soil evaluation to final commissioning. As an AOWMA-certified installer,
+      Ozzy's Excavation brings regulatory expertise and hands-on experience to every septic project,
+      large or small.
+    overview:
+      - >-
+        Septic systems are one of the most critical components of any rural or acreage property.
+        A properly designed and installed system protects your family's health, preserves groundwater
+        quality, and maintains your property value. At Ozzy's Excavation, we handle every phase —
+        from the initial soil evaluation through permitting, design, excavation, installation, and
+        final inspection.
+      - >-
+        We work closely with Alberta's regulatory framework under the Private Sewage Disposal System
+        (PSDS) guidelines. Our AOWMA certification means we understand the science behind wastewater
+        treatment and can design systems that will perform reliably for decades. Whether you're building
+        a new home, replacing a failing system, or need a compliance inspection for a real estate
+        transaction, we've got you covered.
+      - >-
+        No two properties are alike, and neither are our septic solutions. We assess soil type, water
+        table depth, lot size, and household usage to recommend the right system — from conventional
+        trenches to advanced treatment units. Our goal is simple: a system that works quietly underground
+        while you enjoy your home above it.
+    items:
+      - name: AOWMA-Certified System Design
+        description: Custom system design that meets all Alberta PSDS regulations. We evaluate soil conditions, lot layout, and household needs to create a compliant, efficient design.
+      - name: Septic System Installation
+        description: Full installation including tank placement, field excavation, distribution piping, and final grading. We handle conventional, mound, at-grade, and advanced treatment systems.
+      - name: System Repair & Emergency Services
+        description: Fast response for failing systems — clogged fields, tank backups, broken lines. We diagnose the root cause and get you back up and running quickly.
+      - name: Septic System Maintenance
+        description: Regular pump-outs, filter cleaning, and system health checks. Proper maintenance extends system life by years and prevents costly failures.
+      - name: Site Assessments & Soil Testing (PSDS)
+        description: Professional soil profiling and percolation testing to determine the right system type for your property. Required documentation for permitting.
+      - name: Real Estate & Compliance Inspections
+        description: Third-party system inspections for home sales, refinancing, or regulatory compliance. Clear, detailed reports accepted by lenders and municipalities.
+      - name: Advanced Treatment Solutions
+        description: Installation and service of advanced aerobic treatment units, peat filters, and other specialized technologies for challenging sites.
+      - name: Homeowner Septic Education
+        description: We walk you through how your system works, what to watch for, and how to keep it healthy. Informed homeowners make better decisions.
+    process:
+      - title: Initial Consultation
+        description: We visit your property, discuss your needs, and assess site conditions — slope, access, existing utilities, and soil characteristics.
+      - title: Soil Evaluation & Testing
+        description: Our certified professionals conduct percolation tests and soil profiling to determine the absorption capacity and appropriate system type.
+      - title: System Design & Permitting
+        description: We prepare a detailed system design package and submit all required documentation to the local permitting authority for approval.
+      - title: Excavation & Installation
+        description: Our experienced crew handles the dig, tank placement, field installation, and connections — all to engineered specifications.
+      - title: Inspection & Commissioning
+        description: Final regulatory inspection, system startup, and a thorough walk-through so you understand exactly how to manage your new system.
+    equipment:
+      - Track Excavators (5–20 ton)
+      - Skid Steer Loaders
+      - Laser Levels & Grade Control
+      - Compaction Equipment
+      - Trench Boxes & Safety Systems
+      - Dump Trucks
+    gallery:
+      - src: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80
+        alt: Excavator digging trench for septic field
+      - src: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80
+        alt: Concrete septic tank delivery
+      - src: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=600&q=80
+        alt: Grading and backfill around septic installation
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Completed septic system with landscaping
+      - src: https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80
+        alt: Pipeline trenching near septic field
+      - src: https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80
+        alt: Heavy equipment on residential septic project
+    faq:
+      - question: How long does a septic system installation take?
+        answer: "Most residential septic installations take 3–7 days from excavation to final grading, depending on system complexity, site conditions, and weather. The permitting process typically takes 2–4 weeks beforehand."
+      - question: How do I know if my septic system is failing?
+        answer: "Warning signs include: slow-draining fixtures, gurgling pipes, sewage odors, wet or spongy areas near the drain field, unusually green grass over the field, and backups. If you notice any of these, call us immediately for an inspection."
+      - question: What does AOWMA certification mean?
+        answer: "AOWMA (Alberta Onsite Wastewater Management Association) certification ensures your installer has completed rigorous training in soil science, system design, and Alberta's PSDS regulations. It's your guarantee of a compliant, properly designed system."
+      - question: Do you handle permits and inspections?
+        answer: "Yes — we manage the entire permitting process with your local municipality or county, including soil testing documentation, system design submittal, and coordination of final inspections."
+
+  - slug: land-clearing
+    title: Land Clearing & Mulching
+    subtitle: Forestry Services & Site Reclamation
+    hero: https://images.unsplash.com/photo-1598902108854-10e335adac99?w=1200&q=80
+    heroAlt: Forestry mulcher clearing brush and trees
+    description: >-
+      Professional forestry mulching and land clearing services that leave your site clean,
+      accessible, and ready for the next phase. From overgrown acreages to commercial pipeline
+      corridors, Ozzy's Excavation brings the right equipment and expertise to handle vegetation
+      management at any scale.
+    overview:
+      - >-
+        Land clearing is about more than removing trees — it's about preparing your property for its
+        next chapter while respecting the environment. Our forestry mulching approach grinds vegetation
+        into nutrient-rich mulch that stays on-site, preventing erosion, suppressing regrowth, and
+        eliminating the need for burning or hauling debris.
+      - >-
+        We serve residential property owners looking to reclaim overgrown lots, farmers expanding
+        fields, oil and gas operators maintaining pipeline right-of-ways, and municipalities managing
+        fire risk. Every job starts with a site walk to identify what needs to go, what should stay,
+        and how to work efficiently around existing features like power lines, water courses, and
+        property boundaries.
+      - >-
+        Our track-mounted forestry mulchers can tackle dense brush, small to medium trees, and
+        stubborn overgrowth on slopes and in tight spaces where conventional equipment can't go.
+        The result is a clean, walkable surface with a protective mulch layer that feeds the soil
+        as it breaks down.
+    items:
+      - name: Forestry Mulching (Brush & Tree Clearing)
+        description: Our high-flow forestry mulchers grind standing vegetation — brush, saplings, and trees up to 8" diameter — into fine mulch in a single pass. No burning, no hauling, no mess.
+      - name: Overgrowth Control & Site Reclamation
+        description: Reclaim neglected properties, old farm fields, and abandoned lots. We clear years of overgrowth and leave a clean, usable surface ready for the next step.
+      - name: Fire Guard & Line Clearing
+        description: Create defensible space around homes and communities with professional fire break clearing. Essential for rural properties in wildfire-prone areas.
+      - name: Pipeline & Lease Clearing
+        description: Right-of-way maintenance for oil and gas infrastructure. We keep access routes clear for inspection, maintenance, and emergency response.
+      - name: Right-of-Way Clearing
+        description: Road, rail, and utility corridor vegetation management. Safe, efficient clearing that keeps infrastructure accessible and compliant.
+    process:
+      - title: Site Assessment
+        description: We walk the property with you to understand your goals — what stays, what goes, and how you want the finished site to look.
+      - title: Pre-Clearing Planning
+        description: We mark boundaries, identify specimen trees to preserve, and locate underground utilities. Safety and precision come first.
+      - title: Mulching & Clearing
+        description: Our forestry mulcher works through the site systematically, grinding vegetation into mulch while leaving the soil structure intact.
+      - title: Cleanup & Finish Grade
+        description: Final pass ensures even coverage, removes any debris, and leaves the site ready for its next use — building, farming, or just enjoying.
+    equipment:
+      - Track Mulchers (High-Flow)
+      - Skid Steer Mulching Attachments
+      - Excavator with Brush Cutter
+      - Chainsaws & Hand Crew
+      - Dump Trucks (if debris removal needed)
+    gallery:
+      - src: https://images.unsplash.com/photo-1598902108854-10e335adac99?w=600&q=80
+        alt: Forestry mulcher in action
+      - src: https://images.unsplash.com/photo-1508779001448-197fd6dff711?w=600&q=80
+        alt: Cleared land ready for development
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Brush clearing on rural property
+      - src: https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80
+        alt: Heavy equipment clearing overgrowth
+      - src: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=600&q=80
+        alt: Site after mulching complete
+      - src: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80
+        alt: Forestry mulching on acreage property
+    faq:
+      - question: Is forestry mulching better than traditional clearing?
+        answer: "For most applications, yes. Mulching leaves the soil structure intact, prevents erosion, returns organic matter to the ground, and eliminates the cost and environmental impact of burning or hauling debris. The mulch layer also suppresses future weed growth."
+      - question: How long can I expect the mulch to suppress regrowth?
+        answer: "Depending on mulch depth, soil type, and climate, you can expect 2–5 years of significant weed suppression. The mulch naturally decomposes into the soil over time, improving soil health."
+      - question: Can you clear land in winter?
+        answer: "Yes — our tracked equipment handles frozen ground and snow well. Winter clearing can actually be advantageous when the ground is frozen, as it minimizes soil disturbance and compaction."
+
+  - slug: excavation-earthworks
+    title: Excavation & Earthworks
+    subtitle: Site Development & Foundation Work
+    hero: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=1200&q=80
+    heroAlt: Large excavator working on construction site
+    description: >-
+      From basement digs to acreage site prep — we handle every cubic yard with precision, the right
+      equipment, and an eye on the finish grade. Ozzy's Excavation brings decades of combined earthmoving
+      experience to projects of all sizes across Alberta.
+    overview:
+      - >-
+        Earthworks is the foundation of every construction project — literally. Whether you're building
+        a custom home, putting up a shop, or developing a multi-acre commercial site, the quality of the
+        excavation and grading work determines everything that follows. At Ozzy's Excavation, we take
+        that responsibility seriously.
+      - >-
+        Our fleet includes excavators from 5 to 20 tons, skid steers, compactors, and laser-guided
+        grading equipment. This range lets us match the right machine to each job — no wasted time with
+        oversized equipment, no struggling with undersized machines. We handle everything from tight-access
+        backyard digs to wide-open acreage development.
+      - >-
+        Beyond raw earthmoving, we bring site-development expertise: understanding drainage patterns,
+        soil bearing capacity, frost considerations, and how the finished grade needs to interface with
+        buildings, roads, and landscaping. It's not just moving dirt — it's setting the stage for
+        everything that comes after.
+    items:
+      - name: Basement Excavation (New & Existing)
+        description: Full-depth basement digs for new construction, plus underpinning and deepening for existing homes. Precision digging with laser-grade control for perfect foundation prep.
+      - name: Foundation Excavation & Backfill
+        description: Excavation for footings and foundation walls, including proper compaction of backfill material and drainage gravel placement to protect your foundation.
+      - name: Trenching & Utility Excavation
+        description: Trenching for water, sewer, gas, and electrical services. We know utility depths, separation requirements, and how to work safely around existing services.
+      - name: Garage Pads, Shop Pads & Building Pads
+        description: Site prep for detached garages, workshops, barns, and commercial buildings — including topsoil stripping, subgrade prep, and gravel placement.
+      - name: Acreage Site Prep & Lot Development
+        description: Complete acreage development: driveway approaches, building sites, drainage planning, and rough grading to set your property up for success.
+      - name: Road Building, Ditching & Culvert Install
+        description: Access road construction, roadside ditching, and culvert installation for proper drainage. Built to handle Alberta's freeze-thaw cycles.
+      - name: Rough Grade & Final Grade
+        description: Grading to establish drainage patterns and finished elevations. Our laser-guided equipment ensures grades are within tolerance — no standing water, no surprises.
+      - name: Driveway Building & Repair
+        description: From gravel approaches to long rural lanes — we build driveways that drain properly and hold up to heavy use. Repair services for washed-out or rutted driveways.
+    process:
+      - title: Site Survey & Planning
+        description: We assess your site, review engineered drawings if available, identify utilities, and plan the excavation sequence for efficiency and safety.
+      - title: Stripping & Stockpiling
+        description: Topsoil is carefully stripped and stockpiled separately from subsoil — preserving valuable organic material for final landscaping.
+      - title: Rough Excavation
+        description: Bulk excavation to within 6" of final grade, with larger equipment for efficiency. Continuous grade checking ensures we don't over-dig.
+      - title: Fine Grade & Compaction
+        description: Final grading with laser or GPS control. Compaction testing where required. Ready for footings, utilities, or whatever comes next.
+    equipment:
+      - Track Excavators (5–20 ton)
+      - Skid Steer Loaders
+      - Compaction Rollers & Plate Tampers
+      - Laser & GPS Grade Control
+      - Dump Trucks
+      - Tilt Buckets & Specialty Attachments
+    gallery:
+      - src: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80
+        alt: Large excavator on site
+      - src: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=600&q=80
+        alt: Excavator digging foundation
+      - src: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80
+        alt: Construction site preparation
+      - src: https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80
+        alt: Trenching for utilities
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Site grading and earthworks
+      - src: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=600&q=80
+        alt: Basement excavation in progress
+    faq:
+      - question: How much does excavation cost?
+        answer: "Excavation costs vary widely based on scope, soil conditions, access, and project size. We provide free, detailed estimates after a site visit. Typical residential basement excavations in Alberta range from $8,000–$25,000 depending on size and complexity."
+      - question: Do I need engineered drawings for my project?
+        answer: "For structural excavations (basements, foundations, retaining walls), engineered drawings are typically required by permit. We can recommend local engineers if you don't have one. For simpler work like driveway grading, we can work from your vision and our experience."
+      - question: How do you handle drainage and water management during excavation?
+        answer: "We plan excavation sequencing to work with natural drainage patterns, use sump pumps when needed, and ensure final grades direct water away from structures. Alberta's freeze-thaw cycles make proper drainage critical — we design for it from day one."
+      - question: Can you work in winter?
+        answer: "Yes — frost excavation requires more horsepower and sometimes different techniques, but we operate year-round. Winter work can actually be advantageous for some sites when frozen ground provides better access across soft areas."
+
+  - slug: dewatering
+    title: Dewatering & Water Transfer
+    subtitle: Pump Solutions for Any Site
+    hero: https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80
+    heroAlt: Large water pumps on construction site
+    description: >-
+      High-volume dewatering and water transfer services for construction sites, mines, and
+      emergency flood response. When water is standing between you and your project, Ozzy's
+      Excavation has the pumps, hoses, and expertise to move it — fast.
+    overview:
+      - >-
+        Water management is one of the most overlooked yet critical aspects of construction and
+        site work. A water-logged excavation stops work, compromises safety, and can damage
+        foundations and underground work. Our dewatering services keep your project moving
+        regardless of groundwater conditions or weather.
+      - >-
+        We maintain a fleet of high-volume pumps ranging from small 2" trash pumps for residential
+        basements to 6" and 8" high-flow pumps capable of moving thousands of gallons per minute
+        for commercial and industrial applications. Every dewatering setup includes proper discharge
+        planning — because moving water is only half the job; you need to put it somewhere that
+        won't cause problems downstream.
+      - >-
+        For water transfer applications — moving water from a source to a destination over distance —
+        we design hose layouts with the right diameters, pump sizing, and elevation management to get
+        the job done efficiently. Whether it's filling a dugout, irrigating a field, or managing
+        process water on an industrial site, we've got the gear and the know-how.
+    items:
+      - name: Construction & Mine Dewatering
+        description: Keeping excavations, foundations, and mine pits dry so work can proceed. We set up and monitor pump systems that handle groundwater, rain, and runoff 24/7.
+      - name: High Volume Water Transfer
+        description: Moving large volumes of water across distances — dugout filling, irrigation supply, process water management. Properly sized pumps and hoses for maximum flow with minimum fuel.
+      - name: Pump Rentals & Custom Packages
+        description: Need pumps but have your own crew? We rent equipment with full support — delivery, setup consultation, and 24-hour emergency service if something goes wrong.
+      - name: Emergency Flood Response & Site Drainage
+        description: Rapid deployment for flooded basements, washed-out roads, and storm water emergencies. We show up fast with the equipment to move water and minimize damage.
+    process:
+      - title: Site Assessment
+        description: We evaluate water volume, source, elevation changes, discharge options, and access to determine the right pump configuration and horsepower.
+      - title: System Design
+        description: Pump selection, hose routing, power requirements, and discharge planning — all mapped out before equipment arrives on site.
+      - title: Setup & Commissioning
+        description: Equipment delivery, placement, hose deployment, and system startup. We verify flow rates and make adjustments for optimal performance.
+      - title: Monitoring & Maintenance
+        description: For longer projects, we provide regular site checks — fuel levels, pump performance, hose integrity — so you never come to work and find a flooded excavation.
+    equipment:
+      - Trash Pumps (2"–6")
+      - High-Flow Centrifugal Pumps (6"–8")
+      - Submersible Electric Pumps
+      - Hose Packages (Lay-Flat & Rigid)
+      - Fuel Tanks & Service Trucks
+      - Generator Sets
+    gallery:
+      - src: https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80
+        alt: Industrial water pump in operation
+      - src: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=600&q=80
+        alt: Dewatering setup on construction site
+      - src: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80
+        alt: Hose deployment for water transfer
+      - src: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80
+        alt: Site drainage with pump system
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Excavator assisting with dewatering setup
+      - src: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=600&q=80
+        alt: Water pump monitoring and maintenance
+    faq:
+      - question: How quickly can you respond to a flood emergency?
+        answer: "For emergencies, we aim to have equipment and personnel on-site within 2–4 hours in our service area. We maintain ready-to-deploy pump packages so we can move fast when you need us most."
+      - question: Do you handle the discharge permitting?
+        answer: "Discharge requirements vary by municipality and water source. We can advise on what's needed and coordinate with local authorities, but the property owner is typically responsible for obtaining any required discharge permits."
+      - question: What size pump do I need?
+        answer: "It depends on your inflow rate (gallons per minute), total head (vertical lift + friction loss in hoses), and discharge distance. We calculate this as part of every site assessment to ensure the right equipment the first time."
+
+  - slug: screw-piles
+    title: Screw Pile Installation
+    subtitle: Precision Augering & Foundations
+    hero: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=1200&q=80
+    heroAlt: Auger equipment for screw pile installation
+    description: >-
+      Precise auguring and screw-pile installation for fences, decks, signage, and foundation
+      footings — completed with accuracy and efficiency. Ozzy's Excavation delivers engineered
+      solutions that go in fast and hold up for decades.
+    overview:
+      - >-
+        Screw piles (also called helical piles) are one of the most versatile foundation solutions
+        available today. They install quickly with minimal site disturbance, work in a wide range of
+        soil conditions, and can be loaded immediately — no waiting for concrete to cure. For decks,
+        boardwalks, signage, solar arrays, and light structural applications, they're often the
+        smartest choice.
+      - >-
+        Our hydraulic auger setups deliver precise torque and depth control for piles that meet
+        engineered specifications. We work with your engineer or can connect you with structural
+        engineers who specialize in helical pile design. Every installation includes depth and
+        torque documentation — the records you need for building permits and peace of mind.
+      - >-
+        Beyond screw piles, our augering services cover fence post holes, deck footings, tree
+        planting, and any application where a clean, straight hole at a specific depth is required.
+        Our compact equipment works in tight backyards and finished landscapes with minimal impact.
+    items:
+      - name: Fence & Deck Post Hole Auguring
+        description: Clean, vertical holes at precise spacings for fence posts, deck footings, and pergola supports. Our compact auger works in finished yards with minimal turf damage.
+      - name: Screw Pile Holes with Depth-Specific Options
+        description: Pre-drilled pilot holes for screw pile installation at exact depths and diameters. Paired with our pile installation service for a complete solution.
+      - name: Weight-Rated & Engineered Designs
+        description: Screw piles sized and installed to meet specified load ratings — lateral, uplift, and compression. Full documentation provided for engineering sign-off.
+      - name: Signage Installations
+        description: Foundation solutions for commercial signage, billboards, and wayfinding — engineered for wind loading and long-term stability.
+      - name: Foundation Footing Augering
+        description: Deep augering for concrete pier footings in challenging soil conditions. Clean holes to specified depths with minimal sloughing.
+    process:
+      - title: Site Review & Load Requirements
+        description: We review your project needs — what are you building, what loads does it need to handle, and what are the soil conditions?
+      - title: Engineering (If Required)
+        description: For structural applications, we coordinate with your engineer or ours to determine pile size, depth, and spacing based on soil reports and load calculations.
+      - title: Layout & Marking
+        description: Precise layout of pile locations using plans or your markings. We confirm positions before augering begins.
+      - title: Installation
+        description: Hydraulic auger drives each pile to specified depth while monitoring torque. Depth and torque data recorded for every pile.
+      - title: Documentation
+        description: Complete installation report with pile locations, depths, and torque readings — everything you need for permit close-out and engineering records.
+    equipment:
+      - Hydraulic Auger Attachments
+      - Track Skid Steers
+      - Handheld Augers (Tight Access)
+      - Torque Monitoring Systems
+      - Laser Levels
+    gallery:
+      - src: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=600&q=80
+        alt: Auger equipment on site
+      - src: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=600&q=80
+        alt: Screw pile being driven into ground
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Post hole augering for fence installation
+      - src: https://images.unsplash.com/photo-1590069261209-f8e9b8642343?w=600&q=80
+        alt: Skid steer with auger attachment
+      - src: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80
+        alt: Completed screw pile foundation
+      - src: https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80
+        alt: Precision augering for deck footings
+    faq:
+      - question: How do screw piles compare to concrete footings?
+        answer: "Screw piles install in hours instead of days, can be loaded immediately (no curing time), work in wet or challenging soils, and minimize excavation. For decks, boardwalks, and light structures, they're often more cost-effective and faster than concrete."
+      - question: What soil types work for screw piles?
+        answer: "Screw piles work well in most soils including clay, sand, and silts. Rocky or very dense soils may require pre-drilling. We assess soil conditions during the site review to confirm suitability."
+      - question: Do I need an engineer for screw pile design?
+        answer: "For decks and fences, standard load tables often suffice. For structural applications (additions, commercial signage, solar arrays), engineered design is recommended and sometimes required by code. We can connect you with qualified engineers."
+
+  - slug: additional-services
+    title: Additional Services
+    subtitle: Demolition, Snow Removal & More
+    hero: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80
+    heroAlt: Demolition equipment on construction site
+    description: >-
+      Beyond earthworks — demolition, snow removal, landscaping, and seasonal services to keep your
+      property in top shape year-round. Ozzy's Excavation is your single source for property services
+      in Alberta.
+    overview:
+      - >-
+        Property ownership comes with a never-ending list of tasks — from tearing down an old garage
+        to clearing snow in January, from spreading topsoil to pressure washing the siding. Ozzy's
+        Excavation fills the gaps in your project with professional, equipment-backed services that
+        would take you weeks to do by hand.
+      - >-
+        Our demolition services handle residential and light commercial structures safely and
+        efficiently. We manage the entire process from disconnect notices through final site cleanup,
+        including concrete removal, material sorting, and recycling where possible. Every demolition
+        is planned for safety — your family's, your neighbors', and our crew's.
+      - >-
+        Seasonal services like snow removal keep your property accessible and safe through Alberta
+        winters, while landscaping services like topsoil spreading, sod prep, retaining walls, and
+        pressure washing help you make the most of your outdoor space in the warmer months. We're
+        here year-round, whatever the job.
+    items:
+      - name: Residential & Commercial Demolition
+        description: Complete demolition of houses, garages, barns, sheds, and small commercial structures. We handle disconnect coordination, material separation, and site cleanup.
+      - name: Concrete & Asphalt Removal
+        description: Break and remove old driveways, patios, sidewalks, and foundations. We haul away debris and leave the site graded and ready for replacement.
+      - name: Snow Removal & Hauling
+        description: Commercial and large residential snow clearing with loaders and trucks. We clear parking lots, long driveways, and acreage roads — not just a shovel and a hope.
+      - name: Topsoil Spreading & Final Grading
+        description: Screened topsoil delivery and spreading at specified depths for lawns, gardens, and landscaping. Laser-graded for perfect drainage and a smooth finish.
+      - name: Sod Prep & Install
+        description: Complete sod installation including soil prep, grading, rolling, and watering guidance. We can source and place sod from local farms for a lush, instant lawn.
+      - name: Retaining Wall Design & Install
+        description: Timber, block, and boulder retaining walls for terracing, erosion control, and landscape definition. Proper drainage and backfill are built into every wall we construct.
+      - name: Pressure Washing Services
+        description: Professional pressure washing for siding, decks, driveways, sidewalks, and equipment. We bring commercial-grade hot water washers that make quick work of built-up grime.
+    process:
+      - title: Consultation
+        description: Tell us what you need done — we'll tell you if it's in our wheelhouse and how we'd approach it. If it's not our specialty, we'll point you to someone who can help.
+      - title: Site Visit & Estimate
+        description: We come out, measure, assess, and provide a detailed written estimate with a clear scope of work and timeline.
+      - title: Execution
+        description: Our crew arrives with the right equipment and materials. We work efficiently, keep the site clean, and communicate throughout the project.
+      - title: Final Walkthrough
+        description: We walk the finished project with you to make sure everything meets expectations. Your satisfaction is our reputation.
+    equipment:
+      - Excavators with Breaker Attachments
+      - Skid Steers (Multiple Attachments)
+      - Dump Trucks
+      - Snow Pushers & Blowers
+      - Plate Compactors
+      - Pressure Washers (Hot Water)
+    gallery:
+      - src: https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80
+        alt: Demolition in progress
+      - src: https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=600&q=80
+        alt: Snow removal equipment
+      - src: https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80
+        alt: Topsoil spreading and grading
+      - src: https://images.unsplash.com/photo-1598902108854-10e335adac99?w=600&q=80
+        alt: Landscaping and final grade work
+      - src: https://images.unsplash.com/photo-1574359411659-155f81e15893?w=600&q=80
+        alt: Retaining wall construction
+      - src: https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80
+        alt: Pressure washing residential property
+    faq:
+      - question: Do you handle demolition permits?
+        answer: "Yes — we manage the demolition permit process with your municipality, including disconnect coordination for utilities. The permit fee itself is typically the property owner's responsibility and is passed through at cost."
+      - question: What areas do you cover for snow removal?
+        answer: "We serve residential acreages, commercial properties, and rural properties throughout our service area. For winter season, we recommend booking a seasonal contract early to guarantee service priority."
+      - question: Can you build retaining walls on slopes?
+        answer: "Absolutely — retaining walls are one of our specialties. We engineer proper drainage behind every wall and can handle significant elevation changes with tiered wall systems."
+
+whyChooseUs:
+  sectionLabel: Why Choose Us
+  headline: Reliable Workmanship, Built for Alberta
+  highlightPhrase: Alberta
+  subtitle: When you hire Ozzy's, you're getting more than heavy equipment — you're getting a partner who treats your land like it's our own.
+  reasons:
+    - title: Certified & AOWMA-Approved
+      description: Fully certified by the Alberta Onsite Wastewater Management Association, ensuring every septic installation meets rigorous provincial standards.
+      icon: shield-check
+    - title: Fully Insured & Code-Compliant
+      description: Every project is fully insured and built to exceed Alberta building codes — your property and peace of mind are protected.
+      icon: fire
+    - title: Modern Equipment, Skilled Operators
+      description: Our fleet of late-model excavators, skid steers, and mulchers is operated by experienced professionals who treat every site with care.
+      icon: clipboard
+    - title: Transparent Pricing, No Hidden Fees
+      description: Clear, upfront quotes with detailed line items. You'll know exactly what you're paying for — no surprises, no pressure.
+      icon: ticket
+    - title: Built for Alberta Conditions
+      description: From frost heave to clay soils, we engineer every solution for the unique challenges of Alberta's climate and terrain.
+      icon: globe
+
+contact:
+  sectionLabel: Let's Get Started
+  headline: Ready to Transform Your Property?
+  highlightPhrase: Property?
+  subtitle: Whether you're reshaping your lot, prepping for new construction, or planning a custom excavation project — we're here to make it simple. Share a few details about your site and we'll follow up quickly with next steps.
+  contacts:
+    - label: Email
+      value: admin@ozzysexcavation.ca
+      href: mailto:admin@ozzysexcavation.ca
+    - label: Phone
+      value: Call for a quote
+      href: "#"
+    - label: Location
+      value: Alberta, Canada
+      href: "#"
+  formServiceOptions:
+    - value: septic
+      label: Septic System Installation
+    - value: excavation
+      label: Excavation & Earthworks
+    - value: land-clearing
+      label: Land Clearing & Mulching
+    - value: dewatering
+      label: Dewatering & Water Transfer
+    - value: screw-piles
+      label: Screw Pile Installation
+    - value: demolition
+      label: Demolition
+    - value: snow
+      label: Snow Removal
+    - value: landscaping
+      label: Landscaping & Grading
+    - value: other
+      label: Other / Multiple Services
+  form:
+    title: Request a Quote
+    subtitle: Fill out the form and we'll be in touch within 24 hours.
+    successTitle: Quote Request Sent!
+    successMessage: "Thanks, {name}! We'll review your project details and get back to you within 24 hours."
+    resubmitLabel: Submit another request →
+    privacyNote: We respect your privacy. Your information is never shared.
+    submitLabel: Send Quote Request →
+    fields:
+      name:
+        label: Full Name *
+        placeholder: John Smith
+      phone:
+        label: Phone Number *
+        placeholder: "(403) 555-0123"
+      email:
+        label: Email Address *
+        placeholder: john@example.com
+      service:
+        label: Service Needed *
+        placeholder: Select a service...
+      details:
+        label: Project Details *
+        placeholder: Tell us about your project — scope, dimensions, timeline, and any specific requirements...
+
+footer:
+  description: Expert Excavation & Site Solutions, Certified Septic Installer. Proudly serving Alberta with reliable workmanship since day one.
+  certifications:
+    - AOWMA Certified
+    - Fully Insured
+  linkGroups:
+    - title: Services
+      items:
+        - Septic Systems
+        - Land Clearing & Mulching
+        - Excavation & Earthworks
+        - Dewatering & Water Transfer
+        - Screw Pile Installation
+        - Demolition
+        - Snow Removal
+    - title: Company
+      items:
+        - About Oz
+        - Our Equipment
+        - Service Areas
+        - Careers
+    - title: Resources
+      items:
+        - Septic System Guide
+        - Alberta Regulations
+        - FAQ
+        - Blog
+  legal:
+    Privacy Policy: "#"
+    Terms of Service: "#"
+  copyright: Ozzy's Energy Services Ltd.

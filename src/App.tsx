@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/HomePage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
+import GenericPage from './pages/GenericPage'
 import ChatWidget from './components/ChatWidget'
 
 function AppLayout() {
@@ -21,6 +22,7 @@ function AppLayout() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services/:slug" element={<ServiceDetailPage />} />
+        <Route path="/:slug" element={<GenericPage />} />
       </Routes>
       <ChatWidget />
     </div>

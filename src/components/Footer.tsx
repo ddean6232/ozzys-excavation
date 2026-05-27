@@ -18,6 +18,22 @@ function serviceHref(name: string): string {
   return slug ? `/services/${slug}` : '/#services'
 }
 
+// Map footer page link names to route slugs
+const pageSlugMap: Record<string, string> = {
+  'About Oz': 'about',
+  'Our Equipment': 'equipment',
+  'Service Areas': 'service-areas',
+  'Careers': 'careers',
+  'Septic System Guide': 'septic-guide',
+  'Alberta Regulations': 'alberta-regulations',
+  'FAQ': 'faq',
+  'Blog': 'blog',
+}
+
+function pageHref(name: string): string {
+  return pageSlugMap[name] ? `/${pageSlugMap[name]}` : '#'
+}
+
 export default function Footer() {
   return (
     <footer className="bg-earth text-white">
@@ -56,25 +72,14 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3">
                 {group.items.map((item) => {
-                  const href = group.title === 'Services' ? serviceHref(item) : '#'
-                  const isService = group.title === 'Services'
                   return (
                     <li key={item}>
-                      {isService ? (
-                        <Link
-                          to={href}
-                          className="text-white/80 hover:text-rust-light transition-colors text-sm"
-                        >
-                          {item}
-                        </Link>
-                      ) : (
-                        <a
-                          href={href}
-                          className="text-white/80 hover:text-rust-light transition-colors text-sm"
-                        >
-                          {item}
-                        </a>
-                      )}
+                      <Link
+                        to={group.title === 'Services' ? serviceHref(item) : pageHref(item)}
+                        className="text-white/80 hover:text-rust-light transition-colors text-sm"
+                      >
+                        {item}
+                      </Link>
                     </li>
                   )
                 })}

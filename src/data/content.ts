@@ -994,3 +994,46 @@ export const footerContent = {
   },
   copyright: "Ozzy's Energy Services Ltd."
 } as const
+
+export const pageContent_ = {
+  about: {
+    title: "About Oz",
+    subtitle: "A Lifetime of Passion for Heavy Equipment",
+    hero: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80"
+  },
+  equipment: {
+    title: "Our Equipment",
+    subtitle: "Modern Fleet for Alberta Conditions",
+    hero: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80"
+  },
+  "service-areas": {
+    title: "Service Areas",
+    subtitle: "Serving Communities Across Alberta",
+    hero: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=80"
+  },
+  careers: {
+    title: "Careers",
+    subtitle: "Join Our Team of Skilled Professionals",
+    hero: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=80"
+  },
+  "septic-guide": {
+    title: "Septic System Guide",
+    subtitle: "Everything You Need to Know About Septic Systems in Alberta",
+    hero: "https://images.unsplash.com/photo-1624969862644-791f3dc98927?w=1920&q=80"
+  },
+  "alberta-regulations": {
+    title: "Alberta Regulations",
+    subtitle: "Understanding Provincial Standards for Septic & Earthworks",
+    hero: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80"
+  },
+  faq: {
+    title: "Frequently Asked Questions",
+    subtitle: "Answers to Common Questions About Our Services",
+    hero: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80"
+  },
+  blog: {
+    title: "Blog",
+    subtitle: "Tips, Insights & Project Stories from the Field",
+    hero: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920&q=80"
+  }
+} as const
