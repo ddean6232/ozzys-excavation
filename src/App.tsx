@@ -108,7 +108,7 @@ function App() {
         url: 'https://www.ozzysexcavation.ca/',
         telephone: '+1-778-209-1414',
         email: 'admin@ozzysexcavation.ca',
-        image: 'https://www.ozzysexcavation.ca/images/hero-excavator.jpg',
+        image: 'https://www.ozzysexcavation.ca/images/service-equipment.jpg',
         areaServed: ['Calgary', 'Alberta', 'Acreages', 'Rural homes'],
         description: 'Professional excavation, earthworks, septic, dewatering, land clearing, screw pile, demolition, seasonal, and landscape services in Alberta.',
       },

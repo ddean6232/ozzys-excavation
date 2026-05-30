@@ -41,7 +41,7 @@ nav a:hover { color: #c95f16; }
   place-items: center;
   text-align: center;
   color: white;
-  background: url('/images/hero-excavator.jpg') center/cover no-repeat;
+  background: url('/images/service-equipment.jpg') center/cover no-repeat;
 }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.42)); }
 .hero-content { position: relative; max-width: 64rem; padding: 3rem 1rem; }
