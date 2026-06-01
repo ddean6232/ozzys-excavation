@@ -10,9 +10,6 @@
 }
 
 html { scroll-behavior: smooth; }
-html, body, #root { width: 100%; max-width: 100%; overflow-x: hidden; }
-*, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: #FFFFFF; color: #40190E; }
-img, svg, video, canvas { max-width: 100%; height: auto; }
 button, a { cursor: pointer; }
 ::selection { background: #D5560B; color: #FFFFFF; }
