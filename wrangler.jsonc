@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ozzys-excavation",
+  "pages_build_output_dir": "dist",
+  "kv_namespaces": [
+    {
+      "binding": "OZZY_INTAKE_SUBMISSIONS",
+      "id": "b6ec8b2b2ae04414aac69d8a56c7764c"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "OZZY_INTAKE_DB",
+      "database_name": "ozzy_intake",
+      "database_id": "067c3035-b411-4fcc-8b4c-5097e058c1d9"
+    }
+  ]
+}
