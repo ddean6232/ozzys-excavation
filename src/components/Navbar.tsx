@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { navLinks, navCtaText, navLogoLetter, site } from '../data/content'
 
 interface NavbarProps {
@@ -8,16 +8,13 @@ interface NavbarProps {
 
 export default function Navbar({ scrolled }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false)
-  const location = useLocation()
 
   const textColor = scrolled ? 'text-earth' : 'text-white'
   const hoverColor = 'hover:text-rust'
 
   const handleHomeClick = (e: React.MouseEvent) => {
-    if (location.pathname === '/') {
-      e.preventDefault()
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+    e.preventDefault()
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
@@ -31,7 +28,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group" onClick={handleHomeClick}>
+          <Link to="#" className="flex items-center gap-3 group" onClick={handleHomeClick}>
             <div className="w-10 h-10 bg-rust rounded-lg flex items-center justify-center text-white font-display font-bold text-lg transition-transform group-hover:scale-110">
               {navLogoLetter}
             </div>

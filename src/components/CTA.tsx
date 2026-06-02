@@ -121,7 +121,7 @@ export default function CTA() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-earth mb-1.5">
-                      Full Name *
+                      Full Name <span className="text-rust">*</span>
                     </label>
                     <input
                       type="text"
@@ -135,7 +135,7 @@ export default function CTA() {
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-earth mb-1.5">
-                      Phone Number *
+                      Phone Number <span className="text-rust">*</span>
                     </label>
                     <input
                       type="tel"
@@ -151,7 +151,7 @@ export default function CTA() {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-earth mb-1.5">
-                    Email Address *
+                    Email Address <span className="text-rust">*</span>
                   </label>
                   <input
                     type="email"
@@ -166,7 +166,7 @@ export default function CTA() {
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium text-earth mb-1.5">
-                    Service Needed *
+                    Service Needed <span className="text-rust">*</span>
                   </label>
                   <select
                     id="service"
@@ -190,7 +190,7 @@ export default function CTA() {
 
                 <div>
                   <label htmlFor="details" className="block text-sm font-medium text-earth mb-1.5">
-                    Project Details *
+                    Project Details <span className="text-rust">*</span>
                   </label>
                   <textarea
                     id="details"
