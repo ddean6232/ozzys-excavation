@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ozzys-excavation",
   "pages_build_output_dir": "dist",
+  "vars": {
+    "ERPNEXT_BASE_URL": "https://erp.ozzysexcavation.ca"
+  },
   "kv_namespaces": [
     {
       "binding": "OZZY_INTAKE_SUBMISSIONS",
