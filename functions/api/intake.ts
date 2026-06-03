@@ -37,16 +37,15 @@ function safeJsonStringify(value: unknown): string {
   }
 }
 
-function toMysqlDatetime(value: unknown): string {
-  const text = sanitizeString(value)
-  if (!text) return new Date().toISOString().replace('T', ' ').replace(/\.\d+Z$/, '')
+function toMysqlDatetime(value: unknown, fallbackText: string): string {
+  const text = sanitizeString(value) || fallbackText
   try {
     const date = new Date(text)
     if (!Number.isNaN(date.getTime())) {
       return date.toISOString().replace('T', ' ').replace(/\.\d+Z$/, '')
     }
   } catch {}
-  return text
+  return text.replace('T', ' ').replace(/\.\d+Z$/, '')
 }
 
 function targetDoctype(type: IntakeType): string {
