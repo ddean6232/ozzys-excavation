@@ -275,7 +275,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       id,
       status: sync.ok ? 'synced' : 'received',
       storage: 'd1',
-      erp: sync.ok ? { ok: true, doctype: sync.doctype, docname: sync.docname } : { ok: false, queued: true },
+      erp: sync.ok ? { ok: true, doctype: sync.doctype, docname: sync.docname } : sync.error ? { ok: false, queued: false, error: sync.error, status: sync.status } : { ok: false, queued: true },
     },
     201,
   )
