@@ -3,7 +3,7 @@
   "name": "ozzys-excavation",
   "pages_build_output_dir": "dist",
   "vars": {
-    "ERPNEXT_BASE_URL": "https://erp.ozzysexcavation.ca"
+    "ERPNEXT_BASE_URL": "https://ozzy.dtreeind.com"
   },
   "kv_namespaces": [
     {
