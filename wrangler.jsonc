@@ -5,12 +5,6 @@
   "vars": {
     "ERPNEXT_BASE_URL": "https://ozzy.dtreeind.com"
   },
-  "kv_namespaces": [
-    {
-      "binding": "OZZY_INTAKE_SUBMISSIONS",
-      "id": "b6ec8b2b2ae04414aac69d8a56c7764c"
-    }
-  ],
   "d1_databases": [
     {
       "binding": "OZZY_INTAKE_DB",

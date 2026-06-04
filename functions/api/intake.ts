@@ -1,7 +1,6 @@
 type IntakeType = 'quote' | 'septic-assessment'
 
 type Env = {
-  OZZY_INTAKE_SUBMISSIONS?: KVNamespace
   OZZY_INTAKE_DB: D1Database
   ERPNEXT_BASE_URL?: string
   ERPNEXT_API_KEY?: string
@@ -271,19 +270,6 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   )
     .bind(attemptId, id, targetDoctype(type), 'pending', 1, now, safeJsonStringify(record))
     .run()
-
-  if (env.OZZY_INTAKE_SUBMISSIONS) {
-    await env.OZZY_INTAKE_SUBMISSIONS.put(id, JSON.stringify(record), {
-      metadata: {
-        type,
-        status: 'received',
-        receivedAt: now,
-        email,
-        phone,
-        storage: 'd1',
-      },
-    })
-  }
 
   const sync = await syncToErpNext(env, type, record, attemptId)
 
