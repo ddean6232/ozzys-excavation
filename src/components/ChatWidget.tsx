@@ -8,7 +8,7 @@ interface Message {
   streaming?: boolean
 }
 
-const AGENT_ID = 'agent_0501ksmvcy92fbzsycardzmwf9je'
+const AGENT_ID = import.meta.env.VITE_ELEVENLABS_AGENT_ID || 'agent_0501ksmvcy92fbzsycardzmwf9je'
 const TOKEN_URL = `/api/elevenlabs/v1/convai/conversation/token?agent_id=${AGENT_ID}`
 
 export default function ChatWidget() {
@@ -167,6 +167,35 @@ export default function ChatWidget() {
             return
           }
 
+          // Client-side navigation tools (inactive until the ElevenLabs agent is configured to call them)
+          if (typeof msg.type === 'string' && msg.type.includes('client_tool')) {
+            const event = msg.client_tool_call || msg.client_tool_call_event || msg
+            const toolName = event.tool_name || event.name
+            const callId = event.tool_call_id || event.id || event.event_id
+            let params = event.parameters || event.input || event.args || {}
+            if (typeof params === 'string') {
+              try { params = JSON.parse(params) } catch { params = {} }
+            }
+
+            const nav = window.OzzysChatNavigation
+            let result = 'Navigation tool is not available on this page.'
+            if (nav) {
+              if (toolName === 'go_to_service' || toolName === 'show_service_page') result = nav.goToService(params.serviceSlug || params.service_slug || params.slug || '')
+              else if (toolName === 'start_quote' || toolName === 'open_quote_form') result = nav.startQuote(params.serviceSlug || params.service_slug || params.slug || '')
+              else if (toolName === 'start_septic_assessment' || toolName === 'open_septic_assessment') result = nav.startSepticAssessment()
+              else if (toolName === 'scroll_to_section') result = nav.scrollToSection(params.sectionId || params.section_id || params.id || '')
+              else if (toolName === 'navigate_to_allowed_path') result = nav.navigateToAllowedPath(params.path || params.url || '')
+              else result = `Unknown client tool: ${toolName || 'missing name'}.`
+            }
+
+            ws.send(JSON.stringify({
+              type: 'client_tool_result',
+              tool_call_id: callId,
+              result,
+            }))
+            return
+          }
+
           // User transcript (echo of what we sent) — ignore
           if (msg.type === 'user_transcript') return
 
@@ -200,7 +229,7 @@ export default function ChatWidget() {
   const addFallback = useCallback(() => {
     setMessages(prev => [...prev, {
       id: msgIdRef.current++,
-      text: "Sorry, I'm having trouble connecting. Please call us at (867) 445-0923 or email admin@ozzysexcavation.ca.",
+      text: "Sorry, I'm having trouble connecting. Please call us at 778-209-1414 or email admin@ozzysexcavation.ca.",
       sender: 'agent',
       timestamp: new Date(),
     }])
@@ -244,13 +273,13 @@ export default function ChatWidget() {
       {!isOpen && (
         <button
           onClick={() => { setIsOpen(true); setTimeout(() => inputRef.current?.focus(), 100); connect() }}
-          className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-rust hover:bg-rust-dark text-white rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 group"
+          className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#D5560B] hover:bg-[#B5553A] text-white rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 group"
           aria-label="Open chat"
         >
           <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
-          <span className="absolute inset-0 rounded-full bg-rust animate-ping opacity-25" />
+          <span className="absolute inset-0 rounded-full bg-[#D5560B] animate-ping opacity-25" />
         </button>
       )}
 
@@ -258,11 +287,11 @@ export default function ChatWidget() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] h-[560px] max-h-[calc(100vh-8rem)] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-100 animate-scale-in">
           {/* Header */}
-          <div className="bg-earth text-white px-5 py-4 flex items-center justify-between flex-shrink-0">
+          <div className="bg-[#40190E] text-white px-5 py-4 flex items-center justify-between flex-shrink-0">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-rust rounded-full flex items-center justify-center text-lg font-bold">O</div>
+              <div className="w-10 h-10 bg-[#D5560B] rounded-full flex items-center justify-center text-lg font-bold">O</div>
               <div>
-                <div className="font-display font-semibold text-base leading-tight">Ozzy's Excavation</div>
+                <div className="font-sans font-semibold text-base leading-tight">Ozzy's Excavation</div>
                 <div className="text-white/60 text-xs flex items-center gap-1.5">
                   <span className={`w-2 h-2 rounded-full ${wsRef.current?.readyState === WebSocket.OPEN ? 'bg-green-400' : connecting ? 'bg-yellow-400' : 'bg-green-400'}`} />
                   {connecting ? 'Connecting...' : thinking ? 'Typing...' : 'Online'}
@@ -277,12 +306,12 @@ export default function ChatWidget() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-warm-cream">
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-[#E0DBD7]">
             {messages.map(msg => (
               <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${msg.sender === 'user' ? 'bg-rust text-white rounded-br-md' : 'bg-white text-gray-800 rounded-bl-md shadow-sm border border-gray-100'}`}>
+                <div className={`max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${msg.sender === 'user' ? 'bg-[#D5560B] text-white rounded-br-md' : 'bg-white text-gray-800 rounded-bl-md shadow-sm border border-gray-100'}`}>
                   {msg.text}
-                  {msg.streaming && <span className="inline-block w-1.5 h-4 bg-rust ml-0.5 animate-pulse align-middle" />}
+                  {msg.streaming && <span className="inline-block w-1.5 h-4 bg-[#D5560B] ml-0.5 animate-pulse align-middle" />}
                 </div>
               </div>
             ))}
@@ -310,13 +339,13 @@ export default function ChatWidget() {
                 onChange={e => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask me anything about your project..."
-                className="flex-1 px-4 py-2.5 bg-warm-cream border border-gray-200 rounded-xl text-base focus:outline-none focus:border-rust focus:ring-1 focus:ring-rust transition-all"
+                className="flex-1 px-4 py-2.5 bg-[#E0DBD7] border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#D5560B] focus:ring-1 focus:ring-[#D5560B] transition-all"
                 disabled={connecting}
               />
               <button
                 onClick={sendMessage}
                 disabled={!input.trim() || connecting}
-                className="w-10 h-10 bg-rust hover:bg-rust-dark disabled:bg-gray-300 text-white rounded-xl flex items-center justify-center transition-colors flex-shrink-0 disabled:cursor-not-allowed"
+                className="w-10 h-10 bg-[#D5560B] hover:bg-[#B5553A] disabled:bg-gray-300 text-white rounded-xl flex items-center justify-center transition-colors flex-shrink-0 disabled:cursor-not-allowed"
                 aria-label="Send message"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
